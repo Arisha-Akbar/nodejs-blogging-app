@@ -22,7 +22,7 @@ const userSchema = new Schema(
     },
     profileImageURL: {
       type: String,
-      default: "/public/images/avatar (1).png",
+      default: "/images/avatar.png",
     },
     role: {
       type: String,
@@ -67,7 +67,6 @@ userSchema.static(
     return token;
   },
 );
-
 
 const User = model("user", userSchema);
 
